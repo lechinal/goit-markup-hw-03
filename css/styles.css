@@ -25,6 +25,10 @@
 
 /* Globals */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -34,25 +38,28 @@ body {
   list-style: none;
 }
 
-.container-studio {
-  width: 1600px;
+.container-studio,
+.container-portfolio {
+  width: 100%;
   margin: 0px auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* Header */
+
+.header-section-portfolio {
+  background-color: var(--background-color-header-and-main);
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ececec;
+}
 
 .header-section {
   background-color: var(--background-color-header-and-main);
   display: flex;
   align-items: center;
   height: 80px;
-  border: 1px solid #ececec;
 }
-
 .header-logo {
   color: #000000;
   font-family: "Raleway";
@@ -155,8 +162,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin: 200px 452px 280px 452px;
-
+  margin-bottom: 200px;
   height: 120px;
   left: 452px;
   top: 280px;
@@ -170,10 +176,8 @@ body {
 
 .btn-request {
   position: absolute;
-
+  margin-top: 40px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   background: #2196f3;
   color: #ffffff;
   font-weight: var(--font-weight-700);
@@ -185,15 +189,19 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin: auto;
 }
-
+/* About us section
+ */
 .details-section {
-  padding-left: 215px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
 }
 .details {
   display: flex;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .title-details {
   font-weight: var(--font-weight-700);
@@ -253,6 +261,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .our-team-list {
@@ -299,7 +308,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 215px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Footer */
@@ -309,7 +319,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
-  width: 1600px;
   height: 251px;
   left: 0px;
   top: 1628px;
@@ -391,11 +400,13 @@ body {
 .buttons-section {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .buttons-list {
   display: flex;
 }
+
 .btns {
   background: #f5f4fa;
   border: none;
@@ -419,15 +430,23 @@ body {
 
 .list-photo {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-portfolio {
-  width: 1600px;
-  margin: 0px auto;
+.img-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
+
 .img-section {
   display: flex;
   max-width: 1600px;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -446,13 +465,9 @@ body {
   color: var(--our-team-job-and-paragraph-title-details);
   padding-left: 24px;
 }
-
-.img-list {
+.img-section-type {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding-left: 215px;
+  align-content: center;
 }
 
 .brd-box {
@@ -460,5 +475,5 @@ body {
   border: 1px solid #eee;
 }
 .img-section-photo {
-  display: block;
+  display: flex;
 }
