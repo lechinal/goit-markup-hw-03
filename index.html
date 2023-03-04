@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com>https://fonts.gstatic.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +19,19 @@
 <!-- Studio Page -->
 
 <body>
-    <div class="container-studio">
-        <!-- Header -->
-        <header class="header-section">
-            <a class="header-logo unstyled-list" href="index.html">Studio</a>
+
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container">
             <nav class="nav-list">
-                <ul class="nav-item unstyled-list">
-                    <li class="nav-item-list"><a class="link-nav" href="index.html">Studio</a></li>
-                    <li class="nav-item-list"><a class="link-nav" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item-list"><a class="link-nav" href="Contacts.html">Contacts</a></li>
-                </ul>
+                <div class="logo-nav-container">
+                    <a class="header-logo unstyled-list" href="index.html">Studio</a>
+                    <ul class="nav-item unstyled-list">
+                        <li class="nav-item-list"><a class="link-nav" href="index.html">Studio</a></li>
+                        <li class="nav-item-list"><a class="link-nav" href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item-list"><a class="link-nav" href="Contacts.html">Contacts</a></li>
+                    </ul>
+                </div>
                 <ul class="contacts unstyled-list">
                     <li class="contacts-item-mail"><a class="link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -35,15 +39,20 @@
                     <li class="contacts-item-phone"><a class="link" href="tel:+1212-772-4150">+1212-772-4150</a></li>
                 </ul>
             </nav>
-        </header>
-        <!-- Main -->
-        <main class="main-section">
-            <section class="about-us-section section">
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="main-section">
+        <!-- About Us Section -->
+        <section class="about-us-section section">
+            <div class="container">
                 <h1 class="title-btn">Effective solutions for <br>Your bussiness</h1>
                 <button class="btn-request" type="button">Request our service</button>
-            </section>
-            <!-- Details Section -->
-            <section class="details-section section">
+            </div>
+        </section>
+        <!-- Details Section -->
+        <section class="details-section section">
+            <div class="container">
                 <ul class="details unstyled-list">
                     <li>
                         <h3 class="title-details">ATTENTION TO DETAILS</h3>
@@ -66,20 +75,22 @@
                             to simplify work<br> processes.</p>
                     </li>
                 </ul>
-            </section>
-            <!-- What We Do Section -->
-            <section class="what-we-do-section section">
-                <h2 class="what-we-do-title">What we do</h2>
-                <img class="what-we-do-images" src="./images/img1.jpg" alt="Coding" width="370" height="294">
-                <img class="what-we-do-images" src="./images/img2.jpg" alt="Structure" width="370" height="294">
-                <img class="what-we-do-images" src="./images/img3.jpg" alt="Styles" width="370" height="294">
-            </section>
-            <!-- Our Team Section -->
-            <div class="our-team">
-                <h2 class="title-our-team">Our Team</h2>
+            </div>
+        </section>
+        <!-- What We Do Section -->
+        <section class="what-we-do-section section">
+            <h2 class="what-we-do-title">What we do</h2>
+            <img class="what-we-do-images" src="./images/img1.jpg" alt="Coding" width="370" height="294">
+            <img class="what-we-do-images" src="./images/img2.jpg" alt="Structure" width="370" height="294">
+            <img class="what-we-do-images" src="./images/img3.jpg" alt="Styles" width="370" height="294">
+        </section>
+        <!-- Our Team Section -->
+        <div class="our-team section">
+            <div class="container">
+                <h2 class="title-our-team ">Our Team</h2>
                 <ul class="list unstyled-list">
                     <li class="our-team-list">
-                        <img src="./images/ourteam1.jpg" alt="Christopher Walker" width="270" height="260">
+                        <img src="./images/ourteam1.jpg" alt="Christopher Walker" height="260">
                         <h3 class="our-team-name">Christopher Walker</h3>
                         <p class="our-team-job">Product Designer</p>
                     </li>
@@ -100,19 +111,24 @@
                     </li>
                 </ul>
             </div>
-        </main>
-        <!-- Footer -->
-        <footer class="footer-section">
-            <a class="footer-logo" href="Studio.html">Web</a>
-            <address class="address">
-                <ul class="address-list unstyled-list">
-                    <li><a class="address-city" href="address">695 Park Ave NY 10065, USA.</a></li>
-                    <li><a class="address-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="address-phone" href="tel:+1212-772-4150">+1212-772-4150</a></li>
-                </ul>
-            </address>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer-section section">
+        <div class="container">
+            <div class="footer">
+                <a class="footer-logo" href="Studio.html">Web</a>
+                <address class="address">
+                    <ul class="address-list unstyled-list">
+                        <li><a class="address-city" href="address">695 Park Ave NY 10065, USA.</a></li>
+                        <li><a class="address-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="address-phone" href="tel:+1212-772-4150">+1212-772-4150</a></li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
